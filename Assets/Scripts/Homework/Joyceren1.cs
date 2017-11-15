@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Joyceren1 : MonoBehaviour
+public class JoyceRen1 : MonoBehaviour
 {
     
     //1.Declare a int variable and set a value
@@ -66,7 +66,6 @@ public class Joyceren1 : MonoBehaviour
         {
             Debug.Log("Member" +(i+1)+ "is" + WRCHGroup[i]); 
         }
-
 
 
         text = Test("VedioGame");
