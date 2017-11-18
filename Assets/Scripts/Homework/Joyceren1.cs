@@ -68,22 +68,20 @@ public class JoyceRen1 : MonoBehaviour
         }
 
 
-        text = Test("VedioGame");
+        text = TEST("VedioGame");
        
     }
 
 
 
-    //4.2 MyFunctions(Methods)
-    void Test()
+    //MyFunctions(Methods)
+   
+ 
+    string TEST(string value)
     {
-        text = "Living System";
+        return value + " ：Life Game!";
     }
 
-    string Test(string value)
-    {
-        return value + " Living System";
-    }
 
 
 

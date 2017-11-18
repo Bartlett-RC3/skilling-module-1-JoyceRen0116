@@ -5,12 +5,12 @@
 public class Human
 {
     // Variables
-    public int age;
-    public float height;
-    public bool generder;
-    public string firstName, familyName;
-    public bool hungry;
-    public float energy;
+    int age;
+    float height;
+    bool generder;
+    string firstName, familyName;
+    bool hungry;
+    float energy;
 
     // Constructor 
     public Human(int _age, float _height, bool _gender, string _firstName, string _familyName)
@@ -62,3 +62,7 @@ public class Human
 
 
 }
+
+
+
+
