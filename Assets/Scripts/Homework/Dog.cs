@@ -24,10 +24,10 @@
             return (health / (float)maxHealth)*100;
         }
 
-        //public virtual void RestoreHealth()
-        //{
-        //    health = maxHealth;
-        //}
+        public virtual void RestoreHealth()
+        {
+            health = maxHealth;
+        }
 
         ////constructors （ do not  have return types )
         public Dog(string _Name, string _Color, bool _LikeBall, bool _Gender, int _Age)
