@@ -15,16 +15,20 @@ public class Session3 : MonoBehaviour {
 	void Start () {
       // for (int i = 0; i < 10000; i++)
         {
-           /*
+            
+            /*
+
             Vector3 cubePosition = new Vector3(i + 0.5f,0,0);
             Quaternion cubeRotation = Quaternion.identity;
             GameObject newCube = Instantiate(cubeReference, cubePosition, cubeRotation);
+
             */
 
         }
 		
 	}
 	
+
 	// Update is called once per frame
 	void Update () {
         //Time in frams , not very useful because of variiation
@@ -32,14 +36,14 @@ public class Session3 : MonoBehaviour {
         {
             if(counter <=15)
             {
-                //this.gameObject.GetComponent<Transform>().position = new Vector3(counter*(-1), 0, 0);
                 gameObject.transform.Translate(Vector3.left);
                 counter++;
+
             }
             else 
             {
-               moveleft = false;
-               moveright = true;
+                moveleft = false;
+                moveright = true;
                 counter = 0;
             }
         }

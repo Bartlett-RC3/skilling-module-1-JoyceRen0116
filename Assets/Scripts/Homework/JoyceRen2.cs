@@ -25,11 +25,6 @@ public class JoyceRen2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //Dog cc = new Dog();
-        //Debug.Log(cc.health +" / "+cc.maxHealth);
-        //Debug.Log("Heath " + cc.CorrentHealthPercent()+"%");
-
-
         COOLRC3Tutors.Add("Member 1", "Octavian");
         COOLRC3Tutors.Add("Member 2", "Tyson");
         COOLRC3Tutors.Add("Member 3", "Dave");

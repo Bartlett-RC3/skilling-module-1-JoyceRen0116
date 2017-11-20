@@ -29,7 +29,8 @@
             health = maxHealth;
         }
 
-        ////constructors （ do not  have return types )
+
+        //constructors （ do not  have return types )
         public Dog(string _Name, string _Color, bool _LikeBall, bool _Gender, int _Age)
         {
             Name = _Name;
