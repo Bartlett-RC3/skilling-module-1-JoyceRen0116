@@ -53,7 +53,7 @@ public class UpDown : MonoBehaviour {
         if (movedown == true)
         {
 
-            JhonMat.color = Color.red;
+            JhonMat.color = Color.grey;
 
             if (counter <= 30)
             {
