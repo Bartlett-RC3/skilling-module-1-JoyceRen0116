@@ -26,6 +26,8 @@ public class SessionRaycasting : MonoBehaviour {
             Debug.Log("There is an object in front of me! It's name is"+ objectInFrontName ); 
         }
 
+
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * 0.01f);
@@ -35,6 +37,9 @@ public class SessionRaycasting : MonoBehaviour {
         {
             transform.Translate(Vector3.down * 0.01f);
         }
+
+
+
 
     }
 }

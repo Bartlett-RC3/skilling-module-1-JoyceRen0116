@@ -31,20 +31,20 @@ public class JoyceRen3 : MonoBehaviour {
         if (moveleft == true )
         {
 
-            JoyceMat.color = Color.black;
+            JoyceMat.color = Color.white;
 
-            if (counter <= 30)
+            if (counter <= 20)
             {
                 Joycecube.transform.Translate(Vector3.left);
                 counter++;
             }
-            else if (counter > 30 && counter<=60)
+            else if (counter > 20 && counter<=40)
             {
                 
                 Joycecube.transform.Translate(Vector3.right);
                 counter++;
 
-            }else if(counter >60){
+            }else if(counter >40){
                 moveright = true;
                 moveleft = false;
                 counter = 0;
@@ -58,20 +58,20 @@ public class JoyceRen3 : MonoBehaviour {
         if (moveright == true)
         {
 
-            JoyceMat.color = Color.white;
+            JoyceMat.color = Color.black;
 
-            if (counter <= 30)
+            if (counter <= 20)
             {
                 gameObject.transform.Translate(Vector3.right);
                 counter++;
                
             }
 
-            else if (counter >30 && counter<=60)
+            else if (counter >20 && counter<=40)
             {
                 Joycecube.transform.Translate(Vector3.left);
                 counter++;
-            }else if (counter>60)
+            }else if (counter>40)
             {
                 moveleft = true;
                 moveright = false;
