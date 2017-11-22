@@ -13,12 +13,14 @@ public class Distroy_Raycasting : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-      
+
     }
+
+
 
     //Update is called once per frame
 
-        void Update()
+    void Update()
     {
 
 
@@ -31,7 +33,6 @@ public class Distroy_Raycasting : MonoBehaviour
 
         RaycastHit Mushroom;
 
-       
 
 
 
@@ -42,10 +43,26 @@ public class Distroy_Raycasting : MonoBehaviour
 
             Drink.GetComponent<AudioSource>().Play();
 
+            transform.localScale += new Vector3(0.2F, 0, 0);
+
             Debug.Log(Mushroom.transform.gameObject.name+ " be eaten! " + "Energy + 1 ");
 
         }
-           
+          
+
+
+        if (Physics.Raycast(transform.position, Right, out Mushroom, 2))
+
+        {
+            Destroy(Mushroom.transform.gameObject);
+
+            Drink.GetComponent<AudioSource>().Play();
+
+            transform.localScale += new Vector3(0.2F, 0, 0);
+
+            Debug.Log(Mushroom.transform.gameObject.name + " be eaten! " + "Energy + 1 ");
+
+        }
 
 
         if (Physics.Raycast(transform.position, Forward, out Mushroom, 2))
@@ -55,9 +72,22 @@ public class Distroy_Raycasting : MonoBehaviour
 
             Drink.GetComponent<AudioSource>().Play();
 
+            transform.localScale += new Vector3(0.2F, 0, 0);
+
             Debug.Log(Mushroom.transform.gameObject.name + " be eaten! " + "Energy + 1 ");
+        }
+     
 
+        if (Physics.Raycast(transform.position, Back, out Mushroom, 2))
 
+        {
+            Destroy(Mushroom.transform.gameObject);
+
+            Drink.GetComponent<AudioSource>().Play();
+
+            transform.localScale += new Vector3(0.2F, 0, 0);
+
+            Debug.Log(Mushroom.transform.gameObject.name + " be eaten! " + "Energy + 1 ");
         }
      
 
